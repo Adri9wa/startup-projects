@@ -34,10 +34,11 @@ const StartupPage = () => {
           gap: "10px",
           borderRight: "1px solid #658DAF",
           background: "rgba(207, 226, 241, 0.5)",
+          minWidth: "240px",
         }}
       >
         <Box p="20px">
-          <Typography fontSize="20px" color="#7B7B7B">
+          <Typography fontSize="20px" color="#7B7B7B" textAlign="center">
             Startup calculations
           </Typography>
         </Box>
@@ -50,7 +51,7 @@ const StartupPage = () => {
           <Tab value={1} label="Startup risks" />
         </Tabs>
       </Box>
-      <Box sx={{ p: "70px 40px 40px 30px" }}>{renderContent}</Box>
+      <Box sx={{ p: "70px 30px 40px 30px" }}>{renderContent}</Box>
     </Box>
   );
 };

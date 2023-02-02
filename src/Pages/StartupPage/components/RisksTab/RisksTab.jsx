@@ -1,5 +1,5 @@
 const RisksTab = () => {
-  return <>Risks</>;
+  return <>Risks - in development</>;
 };
 
 export default RisksTab;
