@@ -6,6 +6,12 @@ export const defaultEfficiencyFields = [
   { value: "" },
 ];
 
+export const defaultRiskFields = { linguistic: "", value: "" };
+
+export const getRisksFields = (n) => {
+  return Array.from(Array(n)).map((x, i) => ({ ...defaultRiskFields, id: i }));
+};
+
 export const EFFICIENCY_INITIAL_HEADERS = [
   "Групи критеріїв",
   "Бальна оцінка",
@@ -28,3 +34,12 @@ export const AB_SUMS = [
   [50, 225],
   [25, 90],
 ];
+
+export const RISKS_HEADERS = [
+  "№",
+  "Критерій",
+  "Лінгвістична змінна",
+  "Достовірність",
+];
+
+export const RISK_TERMS = ["H", "HC", "C", "BC", "B"];

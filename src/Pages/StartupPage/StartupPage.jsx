@@ -51,7 +51,9 @@ const StartupPage = () => {
           <Tab value={1} label="Startup risks" />
         </Tabs>
       </Box>
-      <Box sx={{ p: "70px 30px 40px 30px" }}>{renderContent}</Box>
+      <Box sx={{ p: "30px 30px 40px 30px", width: "100%" }}>
+        {renderContent}
+      </Box>
     </Box>
   );
 };

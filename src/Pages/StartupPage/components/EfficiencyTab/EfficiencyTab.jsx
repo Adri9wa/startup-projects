@@ -315,9 +315,9 @@ const EfficiencyTab = () => {
           </Grid>
           {formField.firstTableFields.map((item) => (
             <Grid
+              key={item.group}
               container
               columns={15}
-              key={item.group}
               sx={{
                 "&:not(:last-of-type)": {
                   borderBottom: "1px solid #C6C6C7",
@@ -359,6 +359,7 @@ const EfficiencyTab = () => {
           >
             {EFFICIENCY_TERM_HEADERS.map((item) => (
               <Grid
+                key={item}
                 item
                 xs={4}
                 justifyContent="center"
